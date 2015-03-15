@@ -171,6 +171,15 @@ EXE_MEM_stage exe_mem_pipe(.clk(clk),
 									.mem_to_reg_out(mem_to_reg_MEM)
 									);
 
+//Delay for reading in memory
+wire [`DSIZE-1:0] aluout_delayed_MEM;
+wire [`DSIZE-1:0] rdata2_delayed_MEM;
+wire [`ASIZE-1:0] waddr_delayed_MEM;
+wire write_en_delayed_MEM;
+wire mem_write_delayed_MEM;
+wire mem_read_delayed_MEM;
+wire mem_to_reg_delayed_MEM;
+
 //data memory
 memory dm(.clk(clk),
 			 .rst(rst),
@@ -180,7 +189,20 @@ memory dm(.clk(clk),
 			 .fileid(4'b0),
 			 .data_out(mem_data_MEM)
 			 );
-
+MEM_delay delay(.clk(clk),
+					 .rst(rst),
+					 .aluout_in(aluout_MEM),
+					 .waddr_in(waddr_MEM),
+					 
+					 .write_en_in(write_en_MEM),
+					 .mem_to_reg_in(mem_to_reg_MEM),
+					 
+					 .aluout_out(aluout_delayed_MEM),
+					 .waddr_out(waddr_delayed_MEM),
+					 
+					 .write_en_out(write_en_delayed_MEM),
+					 .mem_to_reg_out(mem_to_reg_delayed_MEM)
+					 );
 //Writeback stage
 wire mem_to_reg_WB;
 wire [`DSIZE-1:0] mem_data_WB;
@@ -191,11 +213,11 @@ MEM_WB_stage mem_wb_pipe(
     .rst(rst),
 	 
     .mem_data_in(mem_data_MEM),
-    .aluout_in(aluout_MEM),
-	 .waddr_in(waddr_MEM),
+    .aluout_in(aluout_delayed_MEM),
+	 .waddr_in(waddr_delayed_MEM),
 	 
-	 .write_en_in(write_en_MEM),
-	 .mem_to_reg_in(mem_to_reg_MEM),
+	 .write_en_in(write_en_delayed_MEM),
+	 .mem_to_reg_in(mem_to_reg_delayed_MEM),
 	 
     .mem_data_out(mem_data_WB),
     .aluout_out(aluout_WB),
