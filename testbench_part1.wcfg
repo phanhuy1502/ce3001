@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Phong/Developments/CE3001/final_project/test_bench_3_stage_pipeline_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_bench_3_stage_pipeline" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="38" />
+   <wvobject fp_name="/test_bench_3_stage_pipeline/aluout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">aluout[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/im/data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/fileid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fileid</obj_property>
+      <obj_property name="ObjectShortName">fileid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/C0/reg_dst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_dst</obj_property>
+      <obj_property name="ObjectShortName">reg_dst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/C0/write_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_en</obj_property>
+      <obj_property name="ObjectShortName">write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/C0/alu_src" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_src</obj_property>
+      <obj_property name="ObjectShortName">alu_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/C0/branch" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">branch</obj_property>
+      <obj_property name="ObjectShortName">branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/C0/mem_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_write</obj_property>
+      <obj_property name="ObjectShortName">mem_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/C0/mem_read" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_read</obj_property>
+      <obj_property name="ObjectShortName">mem_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/C0/mem_to_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_to_reg</obj_property>
+      <obj_property name="ObjectShortName">mem_to_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/id_exe_pipe/rdata2_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rdata2_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata2_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/id_exe_pipe/aluin2_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluin2_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">aluin2_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/id_exe_pipe/aluin1_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluin1_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">aluin1_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/id_exe_pipe/imm_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">imm_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">imm_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/exe_mem_pipe/aluout_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluout_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">aluout_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/exe_mem_pipe/rdata2_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rdata2_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata2_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/ALU0/out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/id_exe_pipe/aluop_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluop_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">aluop_out[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/exe_mem_pipe/write_en_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_en_out</obj_property>
+      <obj_property name="ObjectShortName">write_en_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/exe_mem_pipe/mem_read_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_read_out</obj_property>
+      <obj_property name="ObjectShortName">mem_read_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/dm/addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/dm/addr_r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_r[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_r[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/dm/data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/mem_data_MEM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_data_MEM[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_data_MEM[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/dm/memory[5]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[5,15:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[5,15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/dm/memory[10]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[10,15:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[10,15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/mem_wb_pipe/mem_data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_data_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/mem_write_MEM" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_write_MEM</obj_property>
+      <obj_property name="ObjectShortName">mem_write_MEM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/dm/wen" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wen</obj_property>
+      <obj_property name="ObjectShortName">wen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/mem_wb_pipe/waddr_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">waddr_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">waddr_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/mem_wb_pipe/write_en_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_en_out</obj_property>
+      <obj_property name="ObjectShortName">write_en_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/mem_to_reg_WB" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_to_reg_WB</obj_property>
+      <obj_property name="ObjectShortName">mem_to_reg_WB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/writeback_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">writeback_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">writeback_data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/mem_data_WB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_data_WB[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_data_WB[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/aluout_WB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluout_WB[15:0]</obj_property>
+      <obj_property name="ObjectShortName">aluout_WB[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">regdata[0:15,15:0]</obj_property>
+      <obj_property name="ObjectShortName">regdata[0:15,15:0]</obj_property>
+      <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,15:0]</obj_property>
+         <obj_property name="ObjectShortName">regdata[0,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,15:0]</obj_property>
+         <obj_property name="ObjectShortName">regdata[1,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,15:0]</obj_property>
+         <obj_property name="ObjectShortName">regdata[2,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,15:0]</obj_property>
+         <obj_property name="ObjectShortName">regdata[3,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,15:0]</obj_property>
+         <obj_property name="ObjectShortName">regdata[4,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5,15:0]</obj_property>
+         <obj_property name="ObjectShortName">regdata[5,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6,15:0]</obj_property>
+         <obj_property name="ObjectShortName">regdata[6,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7,15:0]</obj_property>
+         <obj_property name="ObjectShortName">regdata[7,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata[8]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[8,15:0]</obj_property>
+         <obj_property name="ObjectShortName">regdata[8,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata[9]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[9,15:0]</obj_property>
+         <obj_property name="ObjectShortName">regdata[9,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata[10]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[10,15:0]</obj_property>
+         <obj_property name="ObjectShortName">regdata[10,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata[11]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[11,15:0]</obj_property>
+         <obj_property name="ObjectShortName">regdata[11,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata[12]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[12,15:0]</obj_property>
+         <obj_property name="ObjectShortName">regdata[12,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata[13]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[13,15:0]</obj_property>
+         <obj_property name="ObjectShortName">regdata[13,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata[14]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[14,15:0]</obj_property>
+         <obj_property name="ObjectShortName">regdata[14,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_bench_3_stage_pipeline/uut/RF0/regdata[15]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[15,15:0]</obj_property>
+         <obj_property name="ObjectShortName">regdata[15,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

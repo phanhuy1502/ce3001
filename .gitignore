@@ -5,3 +5,5 @@
 !.gitignore
 !*.v
 !*.txt
+!*.wcfg
+
