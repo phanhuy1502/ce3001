@@ -83,13 +83,14 @@ wire [`ISIZE-1:0] pcsrc_or_jump_addr = (jump)? jump_addr : pcsrc_addr;
 assign PCIN = (jr)? rdata1 : pcsrc_or_jump_addr;
 //jal mux
 wire [`ASIZE-1:0] waddr = (jal)? 15'hf : waddr_WB;
+wire [`DSIZE-1:0] wdata = (jal)? nextpc : writeback_data;
 regfile  RF0 (.clk(clk),
 					.rst(rst),
 					.wen(write_en_WB),
 					.raddr1(readaddr1),
 					.raddr2(readaddr2),
 					.waddr(waddr),
-					.wdata(writeback_data),
+					.wdata(wdata),
 					.rdata1(rdata1),
 					.rdata2(rdata2)
 					);//note that waddr needs to come from pipeline register 

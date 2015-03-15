@@ -62,7 +62,7 @@ module control(
 				begin
 					jump = 1;
 				end
-			`JR:
+			`JAL:
 				begin
 					jal = 1;
 					jump = 1;
