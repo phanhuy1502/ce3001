@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Phong/Developments/CE3001/final_project/test_bench_3_stage_pipeline_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_bench_3_stage_pipeline" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/test_bench_3_stage_pipeline/aluout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">aluout[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/fileid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fileid</obj_property>
+      <obj_property name="ObjectShortName">fileid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/INST" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">INST[15:0]</obj_property>
+      <obj_property name="ObjectShortName">INST[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/nextpc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">nextpc[15:0]</obj_property>
+      <obj_property name="ObjectShortName">nextpc[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/PCIN" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PCIN[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PCIN[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/jump" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">jump</obj_property>
+      <obj_property name="ObjectShortName">jump</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/jal" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">jal</obj_property>
+      <obj_property name="ObjectShortName">jal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/jr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">jr</obj_property>
+      <obj_property name="ObjectShortName">jr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/jump_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">jump_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">jump_addr[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/branch_jump_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">branch_jump_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">branch_jump_addr[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

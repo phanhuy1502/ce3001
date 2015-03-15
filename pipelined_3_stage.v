@@ -48,7 +48,9 @@ wire write_en_ID;
 wire alu_src_ID;
 wire [2:0] aluop;
 wire [`ASIZE-1:0] waddr_ID;
-
+wire jump;
+wire jal;
+wire jr;
 control C0 (.inst(opcode),
 				.reg_dst(reg_dst_ID),
 				.write_en(write_en_ID),
@@ -56,7 +58,11 @@ control C0 (.inst(opcode),
 				.branch(branch_ID),
 				.mem_write(mem_write_ID),
 				.mem_to_reg(mem_to_reg_ID),
-				.aluop(aluop));
+				.aluop(aluop),
+				.jump(jump),
+				.jr(jr),
+				.jal(jal)
+				);
 
 wire write_en_WB;
 wire [`ASIZE-1:0] waddr_WB;
@@ -69,12 +75,20 @@ wire [`DSIZE-1:0] rdata1;
 wire [`DSIZE-1:0] rdata2;
 wire [`DSIZE-1:0] writeback_data;
 
+//jump address
+wire [`ISIZE-1:0] pcsrc_addr;
+wire [`ISIZE-1:0] jump_addr = {{nextpc[15:11]},{INST[11:0]}};
+wire [`ISIZE-1:0] pcsrc_or_jump_addr = (jump)? jump_addr : pcsrc_addr;
+
+assign PCIN = (jr)? rdata1 : pcsrc_or_jump_addr;
+//jal mux
+wire [`ASIZE-1:0] waddr = (jal)? 15'hf : waddr_WB;
 regfile  RF0 (.clk(clk),
 					.rst(rst),
 					.wen(write_en_WB),
 					.raddr1(readaddr1),
 					.raddr2(readaddr2),
-					.waddr(waddr_WB),
+					.waddr(waddr),
 					.wdata(writeback_data),
 					.rdata1(rdata1),
 					.rdata2(rdata2)
@@ -104,6 +118,7 @@ wire write_en_EXE;
 wire [`DSIZE-1:0] aluout_EXE;
 
 wire aluzero;
+
 ID_EXE_stage id_exe_pipe(.clk(clk),
 								 .rst(rst),
 								 .nextpc_in(nextpc),
@@ -140,7 +155,7 @@ ID_EXE_stage id_exe_pipe(.clk(clk),
 wire [`ISIZE-1:0] newaddr = nextpc_EXE + imm_EXE;
 //pcsrc signal
 wire pc_src = branch_EXE & aluzero;
-assign PCIN = (pc_src)? newaddr: nextpc;
+assign pcsrc_addr = (pc_src)? newaddr: nextpc;
 //alu
 alu ALU0 (  .a(aluin1_EXE),
 				.b(aluin2_EXE),

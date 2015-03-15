@@ -11,7 +11,11 @@ module control(
 	output reg mem_write,
 	output reg mem_read,
 	output reg mem_to_reg,
-	output reg [2:0] aluop
+	output reg [2:0] aluop,
+
+	output reg jump,
+	output reg jal,
+	output reg jr
 	);
 
 	always@(*)
@@ -24,6 +28,9 @@ module control(
 		mem_read = 0;
 		mem_to_reg = 1;
 		aluop = inst[2:0];
+		jal = 0;
+		jump = 0;
+		jr = 0;
 		case(inst)
 			`LW:
 				begin
@@ -47,6 +54,19 @@ module control(
 					aluop = `SUB;
 				end
 			//default case for alu operation
+			`JR:
+				begin
+					jr = 1;
+				end
+			`J:
+				begin
+					jump = 1;
+				end
+			`JR:
+				begin
+					jal = 1;
+					jump = 1;
+				end
 			default:
 				begin
 					write_en=1;
