@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Phong/Developments/CE3001/final_project/test_bench_3_stage_pipeline_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_bench_3_stage_pipeline" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/test_bench_3_stage_pipeline/aluout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">aluout[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/INST" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">INST[15:0]</obj_property>
+      <obj_property name="ObjectShortName">INST[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/fileid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fileid</obj_property>
+      <obj_property name="ObjectShortName">fileid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/C0/reg_dst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_dst</obj_property>
+      <obj_property name="ObjectShortName">reg_dst</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/C0/write_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_en</obj_property>
+      <obj_property name="ObjectShortName">write_en</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/C0/alu_src" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_src</obj_property>
+      <obj_property name="ObjectShortName">alu_src</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/C0/branch" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">branch</obj_property>
+      <obj_property name="ObjectShortName">branch</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/C0/mem_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_write</obj_property>
+      <obj_property name="ObjectShortName">mem_write</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/C0/mem_read" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_read</obj_property>
+      <obj_property name="ObjectShortName">mem_read</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/C0/mem_to_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_to_reg</obj_property>
+      <obj_property name="ObjectShortName">mem_to_reg</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/C0/aluop" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluop[2:0]</obj_property>
+      <obj_property name="ObjectShortName">aluop[2:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/ALU0/zero" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/branch_EXE" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">branch_EXE</obj_property>
+      <obj_property name="ObjectShortName">branch_EXE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/pc_src" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pc_src</obj_property>
+      <obj_property name="ObjectShortName">pc_src</obj_property>
+      <obj_property name="label">pc_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/nextpc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">nextpc[15:0]</obj_property>
+      <obj_property name="ObjectShortName">nextpc[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/id_exe_pipe/nextpc_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">nextpc_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">nextpc_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/id_exe_pipe/imm_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">imm_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">imm_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/newaddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">newaddr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">newaddr[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench_3_stage_pipeline/uut/PCIN" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PCIN[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PCIN[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

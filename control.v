@@ -27,22 +27,23 @@ module control(
 		case(inst)
 			`LW:
 				begin
-					mem_read=1;
-					alu_src=1;
-					write_en=1;
-					mem_to_reg=0;
+					mem_read = 1;
+					alu_src = 1;
+					write_en = 1;
+					mem_to_reg = 0;
 					aluop = `ADD;
 				end
 			`SW:
 				begin
-					reg_dst=1;
-					mem_write=1;
-					alu_src=1;
+					reg_dst = 1;
+					mem_write = 1;
+					alu_src = 1;
 					aluop = `ADD;
 				end
 			`BEQ:
 				begin
-					reg_dst=1;
+					reg_dst = 1;
+					branch = 1;
 					aluop = `SUB;
 				end
 			//default case for alu operation

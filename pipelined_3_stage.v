@@ -19,8 +19,8 @@ wire [`ISIZE-1:0]PCIN;
 
 PC1 pc(.clk(clk),.rst(rst),.nextPC(PCIN),.currPC(PCOUT));//PCOUT is your PC value and PCIN is your next PC
 
-
-assign PCIN = PCOUT + 16'b1; //increments PC to PC +1
+wire [`ISIZE-1:0]nextpc;
+assign nextpc = PCOUT + 16'b1; //increments PC to PC +1
 
 
 //instruction memory
@@ -89,7 +89,7 @@ assign imm_extended = {{13{imm[3]}},{imm[2:0]}};
 wire [`DSIZE-1:0] aluin1_ID = rdata1;
 wire [`DSIZE-1:0] aluin2_ID = (alusrc)?imm_extended:rdata2;
 
-
+wire [`ISIZE-1:0] nextpc_EXE;
 wire [`DSIZE-1:0] aluin1_EXE;
 wire [`DSIZE-1:0] aluin2_EXE;
 wire [`DSIZE-1:0] rdata2_EXE;
@@ -103,8 +103,10 @@ wire mem_to_reg_EXE;
 wire write_en_EXE;
 wire [`DSIZE-1:0] aluout_EXE;
 
+wire aluzero;
 ID_EXE_stage id_exe_pipe(.clk(clk),
 								 .rst(rst),
+								 .nextpc_in(nextpc),
 								 .aluin1_in(aluin1_ID),
 								 .aluin2_in(aluin2_ID),
 								 .rdata2_in(rdata2),
@@ -118,6 +120,7 @@ ID_EXE_stage id_exe_pipe(.clk(clk),
 								 .mem_to_reg_in(mem_to_reg_ID),
 								 .aluop_in(aluop),
 								 
+								 .nextpc_out(nextpc_EXE),
 								 .waddr_out(waddr_EXE),
 								 .imm_out(imm_EXE),
 								 .aluin1_out(aluin1_EXE),
@@ -133,11 +136,17 @@ ID_EXE_stage id_exe_pipe(.clk(clk),
 								 );
 
 //EXE STAGE
+//address adder
+wire [`ISIZE-1:0] newaddr = nextpc_EXE + imm_EXE;
+//pcsrc signal
+wire pc_src = branch_EXE & aluzero;
+assign PCIN = (pc_src)? newaddr: nextpc;
 //alu
 alu ALU0 (  .a(aluin1_EXE),
 				.b(aluin2_EXE),
 				.op(aluop_EXE),
 				.imm(imm_EXE),
+				.zero(aluzero),
 				.out(aluout_EXE));//ALU takes its input from pipeline register
 
 wire [`DSIZE-1:0] aluout_MEM;

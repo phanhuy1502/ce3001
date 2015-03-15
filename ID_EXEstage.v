@@ -4,6 +4,7 @@ module ID_EXE_stage (
 	
 	input  clk,  rst, 
 	
+	input [`DSIZE-1:0] nextpc_in,
 	input [`DSIZE-1:0] aluin1_in,
 	input [`DSIZE-1:0] aluin2_in,
 	input [`DSIZE-1:0] rdata2_in,
@@ -16,6 +17,7 @@ module ID_EXE_stage (
 	input mem_to_reg_in,
 	input [2:0] aluop_in,
 	
+	output reg [`DSIZE-1:0] nextpc_out,
 	output reg [`DSIZE-1:0] aluin1_out,
 	output reg [`DSIZE-1:0] aluin2_out,
 	output reg [`DSIZE-1:0] rdata2_out,
@@ -39,6 +41,7 @@ module ID_EXE_stage (
 always @ (posedge clk) begin
 	if(rst)
 	begin
+		nextpc_out			<= 0;
 		aluin1_out 			<= 0;
 		aluin2_out 			<= 0;
 		rdata2_out			<= 0;
@@ -53,6 +56,7 @@ always @ (posedge clk) begin
 	end
    else
 	begin
+		nextpc_out			<= nextpc_in;
 		aluin1_out 			<= aluin1_in;
 		aluin2_out 			<= aluin2_in;
 		rdata2_out			<= rdata2_in;
