@@ -133,6 +133,7 @@ ID_EXE_stage id_exe_pipe(.clk(clk),
 								 );
 
 //EXE STAGE
+//alu
 alu ALU0 (  .a(aluin1_EXE),
 				.b(aluin2_EXE),
 				.op(aluop_EXE),
