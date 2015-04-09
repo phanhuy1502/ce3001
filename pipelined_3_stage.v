@@ -256,6 +256,9 @@ MEM_WB_stage mem_wb_pipe(
 	//mux memtoreg
 assign writeback_data = (mem_to_reg_WB) ? aluout_WB : mem_data_WB;
 
+	//assign value for output
+assign aluout = aluout_WB;
+
 endmodule
 
 
